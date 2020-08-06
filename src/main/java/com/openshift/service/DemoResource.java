@@ -41,7 +41,7 @@ public class DemoResource {
     @Produces({"application/json"})
     public String logInfo(@Context SecurityContext context) {
         Logger log = Logger.getLogger(DemoResource.class.getName());
-        log.log(Level.INFO, "INFO: OpenShift 3 is an excellent platform for JEE development.");
+        log.log(Level.INFO, "INFO: OpenShift 4 is an excellent platform for JEE development.");
         return new String("{\"response\":\"An informational message was recorded internally.\"}");
     }
 
